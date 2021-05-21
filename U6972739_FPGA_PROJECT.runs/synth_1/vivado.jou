@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Apr 24 20:15:27 2021
+# Process ID: 19764
+# Current directory: E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.runs/synth_1
+# Command line: vivado.exe -log inter_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source inter_top.tcl
+# Log file: E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.runs/synth_1/inter_top.vds
+# Journal file: E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source inter_top.tcl -notrace

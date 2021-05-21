@@ -1,0 +1,102 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sat Apr 24 20:17:03 2021
+| Host         : LAPTOP-TFTI2QQT running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file inter_top_control_sets_placed.rpt
+| Design       : inter_top
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    24 |
+|    Minimum number of control sets                        |    24 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    96 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    24 |
+| >= 0 to < 4        |     5 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    10 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              52 |           25 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             249 |           65 |
+| Yes          | No                    | No                     |              22 |           11 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               5 |            1 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------------------+-----------------------------------+--------------------------------------------------+------------------+----------------+--------------+
+|                  Clock Signal                  |           Enable Signal           |                 Set/Reset Signal                 | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------------------------------+-----------------------------------+--------------------------------------------------+------------------+----------------+--------------+
+|  sysclk_IBUF_BUFG                              |                                   | master_off_IBUF                                  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                              | nolabel_line43/hb/E[0]            |                                                  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                              | cc/debouncer/debouncebeat/beat    |                                                  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                              | hl/debouncer/debouncebeat/beat    |                                                  |                1 |              1 |         1.00 |
+|  gd/fsm/Motor_reg_i_2_n_0                      |                                   |                                                  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                              |                                   | hl/LFSM/night_light_led                          |                1 |              4 |         4.00 |
+|  sysclk_IBUF_BUFG                              | cc/FSM/heratbeat_generator_2/E[0] |                                                  |                3 |              5 |         1.67 |
+|  sysclk_IBUF_BUFG                              | hl/LFSM/heratbeat_generator/E[0]  | hl/LFSM/secure_led                               |                1 |              5 |         5.00 |
+|  sysclk_IBUF_BUFG                              | gd/deb/debouncebeat/E[0]          |                                                  |                2 |              6 |         3.00 |
+|  cc/FSM/ssdValue__0                            |                                   |                                                  |                3 |              6 |         2.00 |
+|  sysclk_IBUF_BUFG                              | gd/fsm/HB/ledcount                |                                                  |                3 |              8 |         2.67 |
+|  inter_fsm/FSM_onehot_nextstate_reg[4]_i_2_n_0 |                                   |                                                  |                3 |              8 |         2.67 |
+|  sysclk_IBUF_BUFG                              |                                   | reset_IBUF                                       |                3 |              9 |         3.00 |
+|  gd/fsm/LEDs_reg[9]_i_2_n_0                    |                                   |                                                  |                4 |             10 |         2.50 |
+|  sysclk_IBUF_BUFG                              |                                   | cc/FSM/heratbeat_generator/clear                 |                5 |             17 |         3.40 |
+|  sysclk_IBUF_BUFG                              |                                   | cc/debouncer/debouncebeat/beat                   |                5 |             20 |         4.00 |
+|  sysclk_IBUF_BUFG                              |                                   | hl/debouncer/debouncebeat/beat                   |                5 |             20 |         4.00 |
+|  sysclk_IBUF_BUFG                              |                                   | cc/FSM/heratbeat_generator_2/count[0]_i_1__1_n_0 |                7 |             27 |         3.86 |
+|  sysclk_IBUF_BUFG                              |                                   | hl/LFSM/heratbeat_generator/count[0]_i_1__2_n_0  |                7 |             27 |         3.86 |
+|  sysclk_IBUF_BUFG                              |                                   |                                                  |               14 |             28 |         2.00 |
+|  sysclk_IBUF_BUFG                              |                                   | cc/FSM/heratbeat_generator_3/count[0]_i_1__0_n_0 |                7 |             28 |         4.00 |
+|  sysclk_IBUF_BUFG                              |                                   | nolabel_line43/hb/counter[0]_i_1__0_n_0          |                8 |             32 |         4.00 |
+|  sysclk_IBUF_BUFG                              |                                   | gd/fsm/HB/counter[0]_i_1__2_n_0                  |                8 |             32 |         4.00 |
+|  sysclk_IBUF_BUFG                              |                                   | gd/deb/debouncebeat/counter[0]_i_1__1_n_0        |                8 |             32 |         4.00 |
++------------------------------------------------+-----------------------------------+--------------------------------------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,387 @@
+
+*** Running vivado
+    with args -log inter_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source inter_top.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source inter_top.tcl -notrace
+Command: synth_design -top inter_top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21240
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1030.129 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'inter_top' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/new/inter_top.v:17]
+INFO: [Synth 8-6157] synthesizing module 'entering_debounce' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/new/entering_debounce.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Dheartbeat' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Garage_Door_Opener/Garage_Door_Opener.srcs/sources_1/new/Dheartbeat.v:3]
+	Parameter TOPCOUNT bound to: 6600000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Dheartbeat' (1#1) [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Garage_Door_Opener/Garage_Door_Opener.srcs/sources_1/new/Dheartbeat.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'entering_debounce' (2#1) [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/new/entering_debounce.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Dgarage_door_top' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Garage_Door_Opener/Garage_Door_Opener.srcs/sources_1/new/Dgarage_door_top.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Dreset_btn' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Garage_Door_Opener/Garage_Door_Opener.srcs/sources_1/new/Dreset_btn.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Dreset_btn' (3#1) [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Garage_Door_Opener/Garage_Door_Opener.srcs/sources_1/new/Dreset_btn.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Ddoubledebounce' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Garage_Door_Opener/Garage_Door_Opener.srcs/sources_1/new/Ddoubledebounce.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Ddoubledebounce' (4#1) [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Garage_Door_Opener/Garage_Door_Opener.srcs/sources_1/new/Ddoubledebounce.v:2]
+INFO: [Synth 8-6157] synthesizing module 'DFSM' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Garage_Door_Opener/Garage_Door_Opener.srcs/sources_1/new/DFSM.v:3]
+	Parameter IDLE bound to: 3'b000 
+	Parameter OPENING bound to: 3'b001 
+	Parameter OPEN_SUS bound to: 3'b010 
+	Parameter OPEN bound to: 3'b011 
+	Parameter CLOSING bound to: 3'b111 
+	Parameter CLOSE_SUS bound to: 3'b110 
+INFO: [Synth 8-6157] synthesizing module 'Dheartbeat__parameterized0' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Garage_Door_Opener/Garage_Door_Opener.srcs/sources_1/new/Dheartbeat.v:3]
+	Parameter TOPCOUNT bound to: 100000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Dheartbeat__parameterized0' (4#1) [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Garage_Door_Opener/Garage_Door_Opener.srcs/sources_1/new/Dheartbeat.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'DFSM' (5#1) [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Garage_Door_Opener/Garage_Door_Opener.srcs/sources_1/new/DFSM.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Dgarage_door_top' (6#1) [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Garage_Door_Opener/Garage_Door_Opener.srcs/sources_1/new/Dgarage_door_top.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MicrowaveFSM_top' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/MicrowaveFSM_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/new/debouncer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'heartbeat' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/heartbeat.v:5]
+	Parameter TOPCOUNT bound to: 1000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'heartbeat' (7#1) [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/heartbeat.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (8#1) [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/new/debouncer.v:3]
+WARNING: [Synth 8-7071] port 'reset' of module 'debouncer' is unconnected for instance 'debouncer' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/MicrowaveFSM_top.v:38]
+WARNING: [Synth 8-7023] instance 'debouncer' of module 'debouncer' has 4 connections declared, but only 3 given [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/MicrowaveFSM_top.v:38]
+INFO: [Synth 8-6157] synthesizing module 'spot' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/spot.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'spot' (9#1) [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/spot.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FSM' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/FSM.v:23]
+	Parameter IDLE bound to: 2'b00 
+	Parameter SET_TEMP bound to: 2'b01 
+	Parameter WORKING bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'heartbeat__parameterized0' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/heartbeat.v:5]
+	Parameter TOPCOUNT bound to: 100000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'heartbeat__parameterized0' (9#1) [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/heartbeat.v:5]
+INFO: [Synth 8-6157] synthesizing module 'heartbeat__parameterized1' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/heartbeat.v:5]
+	Parameter TOPCOUNT bound to: 100000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'heartbeat__parameterized1' (9#1) [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/heartbeat.v:5]
+INFO: [Synth 8-6157] synthesizing module 'heartbeat__parameterized2' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/heartbeat.v:5]
+	Parameter TOPCOUNT bound to: 200000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'heartbeat__parameterized2' (9#1) [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/heartbeat.v:5]
+INFO: [Synth 8-6157] synthesizing module 'sevenSegmentDecoder' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/sevenSegmentDecoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sevenSegmentDecoder' (10#1) [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/sevenSegmentDecoder.v:23]
+INFO: [Synth 8-226] default block is never used [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/FSM.v:133]
+INFO: [Synth 8-226] default block is never used [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/FSM.v:149]
+INFO: [Synth 8-226] default block is never used [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/FSM.v:165]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/FSM.v:131]
+INFO: [Synth 8-6155] done synthesizing module 'FSM' (11#1) [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/FSM.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MicrowaveFSM_top' (12#1) [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/MicrowaveFSM_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Inter_FSM' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/new/Inter_FSM.v:3]
+	Parameter IDLE bound to: 3'b000 
+	Parameter DOOR bound to: 3'b001 
+	Parameter LIGHT bound to: 3'b011 
+	Parameter CLIMATE bound to: 3'b010 
+	Parameter PARA bound to: 3'b111 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/new/Inter_FSM.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/new/Inter_FSM.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'Inter_FSM' (13#1) [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/new/Inter_FSM.v:3]
+INFO: [Synth 8-6157] synthesizing module 'LMicrowaveFSM_top' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Auto_Home_Light/Auto_Home_Light.srcs/sources_1/imports/New folder/LMicrowaveFSM_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Ldebouncer' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Auto_Home_Light/Auto_Home_Light.srcs/sources_1/imports/New folder/Ldebouncer.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Ldebouncer' (14#1) [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Auto_Home_Light/Auto_Home_Light.srcs/sources_1/imports/New folder/Ldebouncer.v:3]
+WARNING: [Synth 8-7071] port 'reset' of module 'Ldebouncer' is unconnected for instance 'debouncer' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Auto_Home_Light/Auto_Home_Light.srcs/sources_1/imports/New folder/LMicrowaveFSM_top.v:40]
+WARNING: [Synth 8-7023] instance 'debouncer' of module 'Ldebouncer' has 4 connections declared, but only 3 given [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Auto_Home_Light/Auto_Home_Light.srcs/sources_1/imports/New folder/LMicrowaveFSM_top.v:40]
+INFO: [Synth 8-6157] synthesizing module 'Lspot' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Auto_Home_Light/Auto_Home_Light.srcs/sources_1/imports/New folder/Lspot.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Lspot' (15#1) [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Auto_Home_Light/Auto_Home_Light.srcs/sources_1/imports/New folder/Lspot.v:1]
+INFO: [Synth 8-6157] synthesizing module 'LFSM' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Auto_Home_Light/Auto_Home_Light.srcs/sources_1/imports/New folder/LFSM.v:23]
+	Parameter NIGHT_LIGHT bound to: 2'b00 
+	Parameter SECURE bound to: 2'b01 
+INFO: [Synth 8-6157] synthesizing module 'Lheartbeat' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Auto_Home_Light/Auto_Home_Light.srcs/sources_1/imports/New folder/Lheartbeat.v:5]
+	Parameter TOPCOUNT bound to: 100000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Lheartbeat' (16#1) [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Auto_Home_Light/Auto_Home_Light.srcs/sources_1/imports/New folder/Lheartbeat.v:5]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Auto_Home_Light/Auto_Home_Light.srcs/sources_1/imports/New folder/LFSM.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'LFSM' (17#1) [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Auto_Home_Light/Auto_Home_Light.srcs/sources_1/imports/New folder/LFSM.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LMicrowaveFSM_top' (18#1) [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Auto_Home_Light/Auto_Home_Light.srcs/sources_1/imports/New folder/LMicrowaveFSM_top.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'inter_top' (19#1) [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/new/inter_top.v:17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1030.129 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1030.129 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1030.129 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1030.129 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/constrs_1/imports/resorce for CC/multipleSSD_constraints_Basys3.xdc]
+Finished Parsing XDC File [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/constrs_1/imports/resorce for CC/multipleSSD_constraints_Basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/constrs_1/imports/resorce for CC/multipleSSD_constraints_Basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/inter_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/inter_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1037.434 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1037.434 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1037.434 ; gain = 7.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1037.434 ; gain = 7.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1037.434 ; gain = 7.305
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'DFSM'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'FSM'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Inter_FSM'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'LFSM'
+WARNING: [Synth 8-327] inferring latch for variable 'Motor_reg' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Garage_Door_Opener/Garage_Door_Opener.srcs/sources_1/new/DFSM.v:66]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                 OPENING |                              001 |                              001
+                OPEN_SUS |                              010 |                              010
+                    OPEN |                              011 |                              011
+                 CLOSING |                              100 |                              111
+               CLOSE_SUS |                              101 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'DFSM'
+WARNING: [Synth 8-327] inferring latch for variable 'LEDs_reg' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Garage_Door_Opener/Garage_Door_Opener.srcs/sources_1/new/DFSM.v:65]
+WARNING: [Synth 8-327] inferring latch for variable 'ssdAnode_reg' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/FSM.v:136]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_nextstate_reg' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/FSM.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_nextstate_reg' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/FSM.v:58]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                SET_TEMP |                              010 |                               01
+                 WORKING |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'FSM'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_nextstate_reg' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/FSM.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'ssdValue_reg' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/resorce for CC/FSM.v:124]
+WARNING: [Synth 8-327] inferring latch for variable 'index_reg' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/new/Inter_FSM.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_nextstate_reg' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/new/Inter_FSM.v:23]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_nextstate_reg' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/new/Inter_FSM.v:23]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                            00001 |                              000
+                    DOOR |                            00010 |                              001
+                   LIGHT |                            00100 |                              011
+                 CLIMATE |                            01000 |                              010
+                    PARA |                            10000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Inter_FSM'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_nextstate_reg' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/new/Inter_FSM.v:23]
+WARNING: [Synth 8-327] inferring latch for variable 'door_reg' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/new/Inter_FSM.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'light_reg' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/new/Inter_FSM.v:47]
+WARNING: [Synth 8-327] inferring latch for variable 'climate_reg' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/new/Inter_FSM.v:48]
+WARNING: [Synth 8-327] inferring latch for variable 'LED_bath_reg' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Auto_Home_Light/Auto_Home_Light.srcs/sources_1/imports/New folder/LFSM.v:119]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             NIGHT_LIGHT |                                0 |                               00
+                  SECURE |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'LFSM'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_nextstate_reg' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Auto_Home_Light/Auto_Home_Light.srcs/sources_1/imports/New folder/LFSM.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'LED_out_reg' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.srcs/sources_1/imports/intergration/Auto_Home_Light/Auto_Home_Light.srcs/sources_1/imports/New folder/LFSM.v:120]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1037.434 ; gain = 7.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    5 Bit       Adders := 4     
+	   2 Input    1 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   6 Input   10 Bit        Muxes := 1     
+	   5 Input   10 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 8     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 14    
+	   4 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 2     
+	   6 Input    1 Bit        Muxes := 3     
+	   5 Input    1 Bit        Muxes := 10    
+	   2 Input    1 Bit        Muxes := 11    
+	   3 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1037.434 ; gain = 7.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1037.434 ; gain = 7.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 1046.230 ; gain = 16.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 1057.691 ; gain = 27.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 1057.691 ; gain = 27.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 1057.691 ; gain = 27.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 1057.691 ; gain = 27.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 1057.691 ; gain = 27.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 1057.691 ; gain = 27.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 1057.691 ; gain = 27.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|inter_top   | gd/rst/reset_out_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    60|
+|3     |LUT1   |    13|
+|4     |LUT2   |    25|
+|5     |LUT3   |    20|
+|6     |LUT4   |    46|
+|7     |LUT5   |    43|
+|8     |LUT6   |    43|
+|9     |SRL16E |     1|
+|10    |FDRE   |   301|
+|11    |FDSE   |     2|
+|12    |LD     |    25|
+|13    |IBUF   |    14|
+|14    |OBUF   |    27|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 1057.691 ; gain = 27.562
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 1057.691 ; gain = 20.258
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1057.691 ; gain = 27.562
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1062.719 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 85 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1062.719 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 25 instances were transformed.
+  LD => LDCE: 25 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+76 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 1062.719 ; gain = 32.590
+INFO: [Common 17-1381] The checkpoint 'E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/FPGA_project/U6972739_FPGA_PROJECT/U6972739_FPGA_PROJECT.runs/synth_1/inter_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file inter_top_utilization_synth.rpt -pb inter_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 24 20:16:16 2021...
